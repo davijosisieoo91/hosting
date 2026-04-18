@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Website</title>
+    
+    <!-- SSL Redirect: Force HTTPS -->
+    <script>
+        // Redirect to HTTPS if the page is not already using HTTPS
+        if (window.location.protocol !== "https:") {
+            window.location.href = "https://" + window.location.hostname + window.location.pathname + window.location.search;
+        }
+    </script>
+
+    <!-- Example Secure Links -->
+    <link rel="stylesheet" href="https://example.com/styles.css">  <!-- Example external secure resource -->
+    <script src="https://example.com/script.js"></script>          <!-- Example external secure script -->
+
+    <!-- Optional: Add a favicon -->
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Welcome to My Secure Website!</h1>
+    <p>This page is served over HTTPS for secure browsing. All links are now secured with SSL.</p>
+
+    <!-- Example Links -->
+    <p><a href="https://example.com/secure-page">Go to Secure Page</a></p>
+    <p><a href="https://example.com/contact">Contact Us (Secure)</a></p>
+
+    <!-- Add more secure resources -->
+    <img src="https://example.com/images/logo.png" alt="Website Logo">
+
+    <footer>
+        <p>&copy; 2026 My Secure Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
